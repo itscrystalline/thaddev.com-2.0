@@ -1,0 +1,33 @@
+.main {
+    background: rgb(255,170,0);
+    background: linear-gradient(90deg, rgba(255,170,0,1) 0%, rgba(255,15,111,1) 100%);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* move it up to the center height of the previus element to create a floating effect */
+    margin-bottom: -350px;
+    margin-top: 150px;
+    height: 200px;
+    z-index: -10;
+}
+
+.links {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+}
+
+.link {
+    height: 40px;
+    float: right;
+    display: flex;
+    margin: auto 24px auto 0;
+    align-self: stretch;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: color 0.2s;
+    padding-left: 15px;
+    padding-right: 15px;
+}

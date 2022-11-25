@@ -1,0 +1,8 @@
+.connector /* same size as About me box */ {
+    width: 70%;
+    margin: -40px auto;
+}
+
+.spacer {
+    padding-bottom: 150px;
+}

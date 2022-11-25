@@ -1,0 +1,39 @@
+.main {
+    white-space: pre;
+    font-size: 150px;
+    font-weight: bolder;
+}
+
+.name {
+    white-space: pre;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* media queries for main and name */
+
+@media (max-width: 768px) {
+    .main {
+        font-size: 100px;
+    }
+    .name {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        font-size: 50px;
+    }
+    .name {
+        font-size: 20px;
+    }
+}
+
+.frame {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7vh;
+}

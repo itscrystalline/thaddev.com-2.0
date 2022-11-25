@@ -1,0 +1,37 @@
+.header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-gap: 15px;
+    margin: 20px 0;
+}
+
+.logo {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    margin: auto;
+    background: #292929;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: all 0.2s;
+}
+
+.logo:hover {
+    transition: all 0.2s;
+    border: 1px solid #ff0f6f;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25), 0 10px 8px rgba(255, 15, 111, 0.12);
+    filter: grayscale(0%);
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

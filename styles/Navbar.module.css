@@ -1,0 +1,79 @@
+.navbar {
+    padding: 0 30px;
+    width: 100%;
+    height: 15vh;
+    background: #1f1f1f;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    height: 52px;
+    float: left;
+    align-content: center;
+}
+
+.navbar .spacer {
+    height: 40px;
+    align-self: stretch;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: auto;
+    float: left;
+}
+
+.navbar .icons {
+    height: 40px;
+    float: right;
+    display: flex;
+    margin: auto 24px auto 0;
+    align-self: stretch;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: color 0.2s;
+}
+
+.navbar .icons:hover {
+    color: #c2c2c2;
+}
+
+.navbarside {
+    /* sidebar floating to the center right */
+    position: fixed;
+    top: 35%;
+    right: 0;
+    width: 15%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.closed {
+    transform: translateX(50%);
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.navbarside .icons {
+    height: 40px;
+    float: right;
+    display: flex;
+    margin: 6px 24px 6px 24px;
+    align-self: flex-end;
+    flex-wrap: nowrap;
+    transition: color 0.2s;
+}
+
+.navbarside .icons:hover {
+    color: #c2c2c2;
+}
+
+
+
