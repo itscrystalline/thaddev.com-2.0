@@ -1,7 +1,6 @@
-import {HiArrowNarrowRight, HiCalendar} from "react-icons/hi";
-import {Timeline, Button, Flowbite} from "flowbite-react";
+import {Flowbite, Timeline} from "flowbite-react";
 import styles from "../styles/River.module.css";
-import {AiOutlineInfoCircle, AiOutlineProject} from "react-icons/ai";
+import {AiOutlineProject} from "react-icons/ai";
 import {BsLightning, BsPlug} from "react-icons/bs";
 import {Technologies} from "./Technologies";
 import {SlideInTimelineContent} from "./SlideInTimelineContent";

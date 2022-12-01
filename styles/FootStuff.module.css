@@ -63,9 +63,30 @@
 .buttons{
     display: flex;
     align-items: center;
+    margin: 20px;
 }
 
 .buttons .button{
     padding-left: 10px;
     padding-right: 10px;
+}
+
+@media (max-width: 480px) {
+    .buttons {
+        flex-direction: column;
+    }
+    .buttons .button{
+        padding: 5px 0px;
+    }
+}
+
+
+.disabled {
+    filter: grayscale(100%);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.disabledcur {
+    cursor: not-allowed;
 }

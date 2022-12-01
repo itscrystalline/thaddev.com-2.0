@@ -7,8 +7,8 @@ export const SlideInTimelineContent = (props) => {
   const ref = React.useRef(null);
   const options = {
     root: null,
-    rootMargin: "10px",
-    threshold: 0.5
+    rootMargin: "-50px",
+    threshold: 0
   };
 
   React.useEffect(() => {

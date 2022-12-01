@@ -8,14 +8,18 @@
     align-items: center;
 }
 
-.navbar .logo {
+.hidden {
+    opacity: 0;
+}
+
+.box {
     display: flex;
     height: 52px;
     float: left;
     align-content: center;
 }
 
-.navbar .spacer {
+.spacer {
     height: 40px;
     align-self: stretch;
     display: flex;
@@ -24,7 +28,15 @@
     float: left;
 }
 
-.navbar .icons {
+.smallspacer {
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    float: left;
+    margin-left: 20px;
+}
+
+.icons {
     height: 40px;
     float: right;
     display: flex;
@@ -35,8 +47,29 @@
     transition: color 0.2s;
 }
 
-.navbar .icons:hover {
+.icons:hover {
     color: #c2c2c2;
+}
+
+.stickbar {
+    position: fixed;
+    padding: 0 30px;
+    width: 100%;
+    top: 0;
+    background: #1f1f1f;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.2s;
+}
+
+.stickbarclosed {
+    height: 15vh;
+}
+
+.stickbaropen {
+    height: 10vh;
 }
 
 .navbarside {
@@ -53,11 +86,11 @@
     transition: all 0.3s ease-out;
 }
 
-.closed {
+.navbarsideclosed {
     transform: translateX(50%);
 }
 
-.open {
+.navbarsideopen {
     transform: translateX(0);
 }
 
@@ -73,6 +106,13 @@
 
 .navbarside .icons:hover {
     color: #c2c2c2;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ededed;
+    padding-left: 50px;
 }
 
 

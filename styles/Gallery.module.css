@@ -1,0 +1,78 @@
+.main {
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+    padding: 32px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin: 20px 0;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background: #292929;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.box:hover {
+    transition: all 0.2s;
+    border: 1px solid #ff5d37;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25), 0 10px 8px rgba(255, 93, 55, 0.12);
+    filter: grayscale(0%);
+}
+
+.hackerrank {
+    background: #0e141e;
+    border: 1px solid #ffffff;
+}
+
+.hackerrank:hover {
+    border: 1px solid #00ea64;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25), 0 10px 8px #005928;
+}
+
+.getlinks {
+    background: #191919;
+    border: 1px solid #ffffff;
+}
+
+.getlinks:hover {
+    border: 1px solid #16b5b8;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25), 0 10px 8px #025d5d;
+}
+
+.verso {
+    background: #191919;
+    border: 1px solid #ffffff;
+}
+
+.verso:hover {
+    border: 1px solid #1ba97e;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25), 0 10px 8px #085d47;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}

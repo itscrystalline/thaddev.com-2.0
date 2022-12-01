@@ -1,6 +1,6 @@
 import styles from "../styles/FootStuff.module.css";
 import React from "react";
-import {Button, Flowbite} from "flowbite-react";
+import {Button, Tooltip} from "flowbite-react";
 import {BsCardImage, BsListNested} from "react-icons/bs";
 import {AiFillApi, AiOutlineArrowRight} from "react-icons/ai";
 
@@ -11,7 +11,7 @@ export const FootStuff = () => {
   const options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.5
+    threshold: 1
   };
 
   React.useEffect(() => {
@@ -30,23 +30,37 @@ export const FootStuff = () => {
       <h1 className={styles.header + " " + (isIntersecting ? styles.show : styles.hidden)}>My other stuff!</h1>
       <div className={styles.stagger + " " + (isIntersecting ? styles.show : styles.hidden) + " " + styles.text}>
         <div className={styles.buttons}>
-          <div className={styles.button}>
-            <Button outline={true} gradientDuoTone="pinkToOrange">
-              <BsCardImage size={25}/> &nbsp; &nbsp; Gallery &nbsp; &nbsp; <AiOutlineArrowRight/>
-            </Button>
-          </div>
+          <a href={"/gallery"}>
+            <div className={styles.button}>
+              <Button outline={true} gradientDuoTone="pinkToOrange" on>
+                <BsCardImage size={25}/> &nbsp; &nbsp; Gallery &nbsp; &nbsp; <AiOutlineArrowRight/>
+              </Button>
+            </div>
+          </a>
 
-          <div className={styles.button}>
-            <Button outline={true} gradientDuoTone="pinkToOrange">
-              <BsListNested size={25}/> &nbsp; &nbsp; Blog &nbsp; &nbsp; <AiOutlineArrowRight/>
-            </Button>
-          </div>
+          <Tooltip content="Coming Soon!" placement="top">
+            <div className={styles.disabledcur}>
+              <div className={styles.disabled}>
+                <div className={styles.button}>
+                  <Button outline={true} gradientDuoTone="pinkToOrange">
+                    <BsListNested size={25}/> &nbsp; &nbsp; Blog &nbsp; &nbsp; <AiOutlineArrowRight/>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </Tooltip>
 
-          <div className={styles.button}>
-            <Button outline={true} gradientDuoTone="pinkToOrange">
-              <AiFillApi size={25}/> &nbsp; &nbsp; API Directory &nbsp; &nbsp; <AiOutlineArrowRight/>
-            </Button>
-          </div>
+          <Tooltip content="Coming Soon!" placement="top">
+            <div className={styles.disabledcur}>
+              <div className={styles.disabled}>
+                <div className={styles.button}>
+                  <Button outline={true} gradientDuoTone="pinkToOrange">
+                    <AiFillApi size={25}/> &nbsp; &nbsp; API Directory &nbsp; &nbsp; <AiOutlineArrowRight/>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </Tooltip>
         </div>
       </div>
     </div>

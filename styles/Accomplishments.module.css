@@ -11,7 +11,7 @@
     margin: 20px 0;
 }
 
-.logo {
+.box {
     width: 100%;
     height: 144px;
     padding: 20px;
@@ -21,13 +21,44 @@
     filter: grayscale(100%);
     transition: all 0.2s;
     cursor: pointer;
+    overflow: hidden;
 }
 
-.logo:hover {
+.box:hover {
     transition: all 0.2s;
     border: 1px solid #ff0f6f;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25), 0 10px 8px rgba(255, 15, 111, 0.12);
     filter: grayscale(0%);
+}
+
+.github {
+    background: #2d333b;
+    border: 1px solid #bacddb;
+}
+
+.github:hover {
+    border: 1px solid #d8efff;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25), 0 10px 8px #424e57;
+}
+
+.hackerrank {
+    background: #0e141e;
+    border: 1px solid #ffffff;
+}
+
+.hackerrank:hover {
+    border: 1px solid #00ea64;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25), 0 10px 8px #005928;
+}
+
+.leetcode {
+    background: #222222;
+    border: 1px solid #fdfdfd;
+}
+
+.leetcode:hover {
+    border: 1px solid #fda500;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25), 0 10px 8px #6e4b00;
 }
 
 .seperator{
@@ -47,4 +78,26 @@
     font-size: 2rem;
     font-weight: bold;
     display: block;
+    width: fit-content;
+}
+
+.buttons{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}
+
+.buttons .button{
+    padding: 10px 10px 20px;
+    align-self: center;
+}
+
+.backgroundLogo{
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    height: 85%;
+    opacity: .1;
+    pointer-events: none;
 }
