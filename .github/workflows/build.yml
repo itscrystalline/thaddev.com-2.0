@@ -1,10 +1,10 @@
-name: build our image
+name: Build and publish Site image
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
 
 env:
