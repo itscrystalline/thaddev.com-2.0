@@ -25,7 +25,7 @@ export const GalleryIntro = () => {
   return (
     <div className={styles.boxorange} ref={ref}>
       <div className={styles.stagger + " " + (isIntersecting ? styles.show : styles.hidden) + " " + styles.text}>
-        This is where I keep all my accomplishments as pictures i've taken.
+        This is where I keep all my accomplishments as pictures i&apos;ve taken.
         <br/>
         <i>(not a lot though, makes me regret that i didnt take more pictures)</i>
         <br/>
