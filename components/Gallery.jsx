@@ -3,7 +3,6 @@ import styles from "../styles/Gallery.module.css";
 import Image from "next/image";
 import React from "react";
 import {useRouter} from 'next/router'
-import {HoverCard} from "./HoverCard";
 
 export const Gallery = () => {
   const ref1 = React.useRef(null);
@@ -24,22 +23,11 @@ export const Gallery = () => {
            id="Hackerrank"
         >Hackerrank</b>
         <div className={styles.grid}>
-          <HoverCard className={styles.box + " " + styles.hackerrank}
-                     hover={
-                       <>
-                         <div className={styles.fill}>
-                           <Image src={"/images/cs_basic.jpg"} width={1000} height={750} objectFit={"cover"}/>
-                         </div>
-                       </>
-                     }
-                     borderColor={"#ff0f6f"}
-                     boxShadowColor={"#ff0f6f1e"}
-                     background={"#292929"}
-          >
+          <div className={styles.box + " " + styles.hackerrank}>
             <div className={styles.fill}>
               <Image src={"/images/cs_basic.jpg"} width={500} height={375} objectFit={"cover"}/>
             </div>
-          </HoverCard>
+          </div>
           <div className={styles.box + " " + styles.hackerrank}>
             <div className={styles.fill}>
               <Image src={"/images/js_basic.jpg"} width={500} height={375} objectFit={"cover"}/>

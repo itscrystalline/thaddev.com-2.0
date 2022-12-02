@@ -2,6 +2,11 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #fff;
+}
+
+.subheader {
+    color: rgb(156 163 175);
 }
 
 .grid {

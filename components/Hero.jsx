@@ -15,9 +15,9 @@ export const Hero = () => {
   React.useEffect(() => {
     const options = {
       strings: [
-        ' I am <b><i style="background: linear-gradient(89.97deg, rgb(255, 170, 0) 1.84%, rgb(255,0,122) 102.67%) padding-box text; -webkit-text-fill-color: transparent;">Thad Choyrum</i></b>.',
-        ' My nicknames are <b style="background: linear-gradient(89.97deg, rgb(255, 170, 0) 1.84%, rgb(255,0,122) 102.67%) padding-box text; -webkit-text-fill-color: transparent;">IWant2TryHard</b>,',
-        ' and <b style="background: linear-gradient(89.97deg, rgb(255, 170, 0) 1.84%, rgb(255,0,122) 102.67%) padding-box text; -webkit-text-fill-color: transparent;">MyNameTsThad</b>.'
+        ` I am <b><i class="Hero_gradient__vJXrL">Thad Choyrum</i></b>.`,
+        ' My nicknames are <b class="Hero_gradient__vJXrL">IWant2TryHard</b>,',
+        ' and <b class="Hero_gradient__vJXrL">MyNameTsThad</b>.'
       ],
       typeSpeed: 25,
       backSpeed: 20,

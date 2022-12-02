@@ -2,12 +2,20 @@
     white-space: pre;
     font-size: 150px;
     font-weight: bolder;
+    color: #ffffff;
 }
 
 .name {
     white-space: pre;
     font-size: 50px;
     font-weight: bold;
+    color: #ffffff;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #FF0080 0%, #FF8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* media queries for main and name */

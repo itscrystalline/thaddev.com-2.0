@@ -19,7 +19,7 @@ export const Projects = () => {
       <Timeline.Title className={styles.header}>
         Projects
       </Timeline.Title>
-      <Timeline.Body>
+      <Timeline.Body className={styles.subheader}>
         I have a wide
         range of passion projects, ranging from games to websites to show for my coding skills. I have/had been involved
         in a few hackathons/competitions from different places, both online and offline.

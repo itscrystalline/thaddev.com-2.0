@@ -9,7 +9,7 @@ import {Accomplishments} from "./Accomplishments";
 
 export const River = () => {
   return (
-    <Flowbite dark={true}>
+    <Flowbite>
       <div className={styles.connector}>
         <Timeline>
           <div className={styles.spacer}>

@@ -2,6 +2,7 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .grid {
@@ -9,6 +10,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 30px;
     margin: 20px 0;
+    color: #ffffff;
 }
 
 .box {
@@ -72,6 +74,7 @@
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: rgb(156 163 175);
 }
 
 .number {

@@ -53,29 +53,29 @@ export const Navbar = (props) => {
             <div className={styles.spacer}/>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>View Source</p>} placement="bottom" arrow={false}>
-                <a href="https://github.com/MyNameTsThad/thaddev.com-2.0"><FiGithub size={25}/></a>
+                <a href="https://github.com/MyNameTsThad/thaddev.com-2.0"><FiGithub size={25} color={"#ffffff"}/></a>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>About Me</p>} placement="bottom" arrow={false}>
-                <a href="#about"><AiOutlineInfoCircle size={25}/></a>
+                <a href="#about"><AiOutlineInfoCircle size={25} color={"#ffffff"}/></a>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Technologies</p>} placement="bottom" arrow={false}>
-                <a href="#technologies"><BsPlug size={25}/></a>
+                <a href="#technologies"><BsPlug size={25} color={"#ffffff"}/></a>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Projects</p>} placement="bottom" arrow={false}>
-                <a href="#projects"><AiOutlineProject size={25}/>
+                <a href="#projects"><AiOutlineProject size={25} color={"#ffffff"}/>
                 </a>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Accomplishments</p>} placement="bottom" arrow={false}>
                 <a href="#accomplishments">
-                  <BsLightning size={25}/>
+                  <BsLightning size={25} color={"#ffffff"}/>
                 </a>
               </Tooltip>
             </div>
@@ -88,41 +88,41 @@ export const Navbar = (props) => {
             className={styles.navbarside + " " + (isIntersecting ? styles.navbarsideclosed : styles.navbarsideopen)}>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Back to Top</p>} placement="left" arrow={false}>
-                <a href="#top"><HiChevronDoubleUp size={25}/></a>
+                <a href="#top"><HiChevronDoubleUp size={25} color={"#ffffff"}/></a>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>View Source</p>} placement="left" arrow={false}>
-                <a href="https://github.com/MyNameTsThad/thaddev.com-2.0"><FiGithub size={25}/></a>
+                <a href="https://github.com/MyNameTsThad/thaddev.com-2.0"><FiGithub size={25} color={"#ffffff"}/></a>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>About Me</p>} placement="left" arrow={false}>
-                <a href="#about"><AiOutlineInfoCircle size={25}/></a>
+                <a href="#about"><AiOutlineInfoCircle size={25} color={"#ffffff"}/></a>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Technologies</p>} placement="left" arrow={false}>
-                <a href="#technologies"><BsPlug size={25}/></a>
+                <a href="#technologies"><BsPlug size={25} color={"#ffffff"}/></a>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Projects</p>} placement="left" arrow={false}>
-                <a href="#projects"><AiOutlineProject size={25}/>
+                <a href="#projects"><AiOutlineProject size={25} color={"#ffffff"}/>
                 </a>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Accomplishments</p>} placement="left" arrow={false}>
                 <a href="#accomplishments">
-                  <BsLightning size={25}/>
+                  <BsLightning size={25} color={"#ffffff"}/>
                 </a>
               </Tooltip>
             </div>
           </aside>
         </> :
         <nav className={styles.stickbar + " " + (isIntersecting ? styles.stickbarclosed : styles.stickbaropen)} id="top">
-          <a href={"/"}><FiArrowLeft size={25}/></a>
+          <a href={"/"}><FiArrowLeft size={25} color={"#ffffff"}/></a>
           <div className={styles.smallspacer}/>
           <div className={styles.logo}>
             <a href="#main">

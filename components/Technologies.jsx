@@ -10,7 +10,7 @@ export const Technologies = () => {
       <Timeline.Title className={styles.header}>
         Technologies
       </Timeline.Title>
-      <Timeline.Body>
+      <Timeline.Body className={styles.subheader}>
         I have worked with technologies that would consider myself a Full-stack developer, with the exception of
         databases. However, I also design and develop games and mods for them in my spare time.
       </Timeline.Body>
@@ -41,7 +41,7 @@ export const Technologies = () => {
         </Tooltip>
         <Tooltip content={<p style={{fontSize: "smaller"}}>Unity</p>} placement="bottom" arrow={true}>
           <div className={styles.logo}>
-            <FaUnity size={45}/>
+            <FaUnity size={45} color={"#fff"}/>
           </div>
         </Tooltip>
         <Tooltip content={<p style={{fontSize: "smaller"}}>Spring Boot</p>} placement="bottom" arrow={true}>

@@ -12,8 +12,8 @@ export const Accomplishments = () => {
   const {data, error} = useSWR('https://api.thaddev.com/api-v1/codingstats/get', fetcher)
 
   let response = null;
-  if (error) response = <div>Loading failed! Check the browser console for details.</div>
-  if (!data) response = <div>Loading...</div>
+  if (error) response = <div color={"#fff"}>Loading failed! Check the browser console for details.</div>
+  if (!data) response = <div  color={"#fff"}>Loading...</div>
 
   return (
     <>

@@ -46,7 +46,8 @@ export const HoverCard = (props) => {
           left: left,
           border: `1px solid ${props.borderColor}`,
           boxShadow: `0 4px 7px rgba(0, 0, 0, 0.25), 0 10px 8px ${props.boxShadowColor}`,
-          background: props.background
+          background: props.background,
+          color: "#fff"
         }
       }>
         {props.hover}
