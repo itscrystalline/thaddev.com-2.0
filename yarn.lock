@@ -691,7 +691,7 @@ chownr@^1.1.1:
   resolved "https://registry.npmjs.org/chownr/-/chownr-1.1.4.tgz"
   integrity sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==
 
-classnames@^2.2.6, classnames@^2.3.1:
+classnames@^2.2.6, classnames@^2.3.2:
   version "2.3.2"
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
@@ -1395,16 +1395,16 @@ flatted@^3.1.0:
   resolved "https://registry.npmjs.org/flatted/-/flatted-3.2.7.tgz"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
-flowbite-react@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/flowbite-react/-/flowbite-react-0.2.0.tgz"
-  integrity sha512-jmR71mDlY878sL0Zi1Rp9gPz9Mjcpj8OxWjj4sqZ1aQOTNGSU1GIPpDdD48s49361xj8DRocuuRq96C0zsXwJw==
+flowbite-react@^0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/flowbite-react/-/flowbite-react-0.3.7.tgz#14875099875a654f32dd63137cf0371c28399b87"
+  integrity sha512-vnDlbuJubo66O5U4Fj9pkAhsaO+uWjR4qShlbIK+6qS+VbfZX5xaDNKHg98WkEhfyXsL8/03eSQZcuE073SvwA==
   dependencies:
     "@floating-ui/react-dom" "^1.0.0"
     "@floating-ui/react-dom-interactions" "^0.9.1"
-    classnames "^2.3.1"
+    classnames "^2.3.2"
     commitizen "^4.2.5"
-    react-icons "^4.4.0"
+    react-icons "^4.6.0"
     react-indiana-drag-scroll "^2.2.0"
 
 flowbite@^1.5.3:
@@ -2468,7 +2468,7 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-icons@^4.4.0, react-icons@^4.7.1:
+react-icons@^4.6.0, react-icons@^4.7.1:
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.7.1.tgz#0f4b25a5694e6972677cb189d2a72eabea7a8345"
   integrity sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==
