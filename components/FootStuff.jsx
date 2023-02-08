@@ -38,17 +38,13 @@ export const FootStuff = () => {
             </div>
           </a>
 
-          <Tooltip content="Coming Soon!" placement="top">
-            <div className={styles.disabledcur}>
-              <div className={styles.disabled}>
-                <div className={styles.button}>
-                  <Button outline={true} gradientDuoTone="pinkToOrange">
-                    <BsListNested size={25}/> &nbsp; &nbsp; Blog &nbsp; &nbsp; <AiOutlineArrowRight/>
-                  </Button>
-                </div>
-              </div>
+          <a href={"/blog"}>
+            <div className={styles.button}>
+              <Button outline={true} gradientDuoTone="pinkToOrange">
+                <BsListNested size={25}/> &nbsp; &nbsp; Blog &nbsp; &nbsp; <AiOutlineArrowRight/>
+              </Button>
             </div>
-          </Tooltip>
+          </a>
 
           <Tooltip content="Coming Soon!" placement="top">
             <div className={styles.disabledcur}>

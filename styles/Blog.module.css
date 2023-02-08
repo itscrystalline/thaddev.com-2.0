@@ -1,0 +1,112 @@
+.main {
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+    padding: 96px;
+}
+
+.box {
+    /* gray box with 16px rounded corners and increase shadow when hover */
+    background-color: #292929;
+    color: #fafafa;
+    border: 1px solid #30363d !important;
+    border-radius: 8px;
+    transition: all 0.2s;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto auto 20px;
+    text-overflow: ellipsis;
+    /* leave space for image at the right end */
+}
+
+.first {
+    transform: scale(1.1);
+}
+
+.box:hover {
+    transition: all 0.2s;
+    border: 1px solid #ffaa00 !important;
+    transform: scale(1.005);
+}
+
+.first:hover {
+    transform: scale(1.11);
+    padding: 21px;
+}
+
+.hidden {
+    /* hidden box */
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all 0.3s;
+}
+
+.show {
+    /* show box */
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s;
+}
+
+
+.stagger {
+    transition-delay: 100ms;
+}
+
+.left {
+    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    min-width: 0;
+    display: inline;
+    width: 80%;
+}
+
+.title {
+    /* center the text */
+    font-size: 1.5rem;
+    color: #c0c0c0;
+    font-weight: 600;
+    /* leave space for image at the right end */
+    margin-right: 100px;
+}
+
+.description {
+    /* center the text */
+    font-size: 1rem;
+    color: #c0c0c0;
+    font-weight: 400;
+    text-overflow: ellipsis;
+}
+
+.postStats {
+    padding-top: 5px;
+    /* center the text */
+    font-size: 0.8rem;
+    color: #c0c0c0;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    display: flex;
+    text-align: center;
+}
+
+.centeredSvg {
+    /*container for svg which is vertically centered*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.image {
+    /* fit image to frame and cover object size */
+    max-height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+    /* position at end of parent div */
+    align-self: flex-end;
+}

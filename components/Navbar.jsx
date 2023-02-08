@@ -29,7 +29,8 @@ export const Navbar = (props) => {
 
   return (
     <>
-      <nav className={styles.navbar + (props.noIcons ? (isIntersecting ? "" : " " + styles.hidden) : "")} ref={ref} id="top">
+      <nav className={styles.navbar + (props.noIcons ? (isIntersecting ? "" : " " + styles.hidden) : "")} ref={ref}
+           id="top">
         {props.noIcons ?
           <>
             <a href={props.arrowTarget}><FiArrowLeft size={25}/></a>
@@ -37,18 +38,14 @@ export const Navbar = (props) => {
           </>
           : <></>
         }
-        <div className={styles.logo}>
-          <a href="#main">
-            <Image src="/logolong.svg" width={194} height={52} priority={true}/>
-          </a>
-        </div>
+        <a href={"/#main"}>
+          <Image src="/logolong.svg" width={194} height={52} priority={true}/>
+        </a>
         {props.noIcons ?
           <>
             <span className={styles.title}>{props.name}</span>
           </>
-          : <></>
-        }
-        {!props.noIcons ?
+          :
           <>
             <div className={styles.spacer}/>
             <div className={styles.icons}>
@@ -79,7 +76,7 @@ export const Navbar = (props) => {
                 </a>
               </Tooltip>
             </div>
-          </> : <></>
+          </>
         }
       </nav>
       {!props.noIcons ?
@@ -121,11 +118,12 @@ export const Navbar = (props) => {
             </div>
           </aside>
         </> :
-        <nav className={styles.stickbar + " " + (isIntersecting ? styles.stickbarclosed : styles.stickbaropen)} id="top">
-          <a href={"/"}><FiArrowLeft size={25} color={"#ffffff"}/></a>
+        <nav className={styles.stickbar + " " + (isIntersecting ? styles.stickbarclosed : styles.stickbaropen)}
+             id="top">
+          <a href={props.arrowTarget}><FiArrowLeft size={25} color={"#ffffff"}/></a>
           <div className={styles.smallspacer}/>
           <div className={styles.logo}>
-            <a href="#main">
+            <a href="/#main">
               <Image src="/logolong.svg" width={194} height={52} priority={true}/>
             </a>
           </div>

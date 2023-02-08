@@ -687,9 +687,9 @@ export const Projects = () => {
                              Built using the NodeMCU ESP8266 with Arduino and the Blynk platform library.
                            </>
                          }
-                       borderColor={"#00ea64"}
-                       boxShadowColor={"#0059281e"}
-                       background={"#0e141e"}
+                       borderColor={"#ff0f6f"}
+                       boxShadowColor={"#ff0f6f1e"}
+                       background={"#292929"}
             >
               <span className={styles.title}>IoT Door Lock</span>
             </HoverCard>

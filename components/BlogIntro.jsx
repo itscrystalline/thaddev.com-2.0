@@ -1,7 +1,7 @@
 import styles from "../styles/About.module.css";
 import React from "react";
 
-export const About = () => {
+export const BlogIntro = () => {
   // use intersection observer to trigger animation upon entering viewport
   const [isIntersecting, setIntersecting] = React.useState(false);
   const ref = React.useRef(null);
@@ -23,18 +23,11 @@ export const About = () => {
   });
 
   return (
-    <div className={styles.box} ref={ref} id="about">
-      <h1 className={styles.header + " " + (isIntersecting ? styles.show : styles.hidden)}>Who am I?</h1>
+    <div className={styles.boxorange} ref={ref}>
       <div className={styles.stagger + " " + (isIntersecting ? styles.show : styles.hidden) + " " + styles.text}>
-        I am a 14 year old from Thailand, currently studying in 9th grade.
+        <b>Welcome to my blog!</b>
         <br/>
-        I have a passion for programming since I was 9, So naturally I have interest in anything computer-related.
-        <br/>
-        I like games (I am a Minecraft modder and player) and strive for good looking UIs.
-        <br/>
-        <i>also loves to cosplay being a sysadmin :)</i>
-        <br/>
-        <u style={{color: "lightblue"}}><code>IWant2TryHard#1702</code> on Discord. I do not have an &ldquo;official&rdquo; account.</u>
+        This is where I write my status updates.
       </div>
     </div>
   )
