@@ -10,7 +10,6 @@ export const Blog = () => {
   const fetcher = (options) => fetch(options).then(res => res.json())
 
   const {data, error} = useSWR('https://cms.thaddev.com/api/posts?populate=image', fetcher)
-  const {viewData, viewDataError} = useSWR('https://api.thaddev.com/api-v1/postviews/getall', fetcher)
 
   let response = null;
   if (error) {
@@ -20,11 +19,6 @@ export const Blog = () => {
   }
   if (!data) response = <div color={"#fff"} style={{margin: "auto", textAlign: "center"}}>Loading...</div>
   else response = null
-
-  // if (viewDataerror) {
-  //   console.log("Loading view data failed!")
-  //   console.log(viewDataerror)
-  // }
 
   const posts = data?.data;
 
@@ -42,12 +36,6 @@ export const Blog = () => {
                   {posts[0].attributes.description}
                 </p>
                 <div className={styles.postStats}>
-                  <div className={styles.centeredSvg}>
-                    <AiFillEye/>
-                  </div>
-                  {viewData?.data[posts[0].id] ? viewData.data[posts[0].id] : 0}
-
-
                   <div className={styles.centeredSvg}>
                     <AiFillCalendar/>
                   </div>
@@ -67,10 +55,6 @@ export const Blog = () => {
                     {post.attributes.description}
                   </p>
                   <div className={styles.postStats}>
-                    <div className={styles.centeredSvg}>
-                      <AiFillEye/>
-                    </div>
-                    {viewData?.data[post.id] ? viewData.data[post.id] : 0}
                     <div className={styles.centeredSvg}>
                       <AiFillCalendar/>
                     </div>

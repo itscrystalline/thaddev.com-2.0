@@ -14,6 +14,7 @@ My website and portfolio, Rebuilt with way less deps with [Next.js](https://next
 * swr
 * typed.js
 * sharp
+* marked
 ### Development
 * autoprefixer
 * eslint

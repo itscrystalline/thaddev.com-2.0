@@ -29,3 +29,11 @@
     margin-right: 7px;
     margin-left: 5px;
 }
+
+.content {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
