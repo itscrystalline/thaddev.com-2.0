@@ -3,6 +3,7 @@ import React from "react";
 
 export const HoverCard = (props) => {
   const [hovering, setHovering] = React.useState(false); // initiate it at false
+  const [showModal, setShowModal] = React.useState(false); // initiate it at false
 
   //set top and left the same as the main div
   const [top, setTop] = React.useState(0);
@@ -23,20 +24,24 @@ export const HoverCard = (props) => {
 
   React.useEffect(() => {
     setDimensions()
+    if (showModal) {
+      setAndUpdateHovering(false);
+    }
   }, []);
 
   const onClick = () => {
     // show card when clicked
-    setAndUpdateHovering(!hovering);
+    setShowModal(!showModal);
+    setAndUpdateHovering(false);
   }
 
   return (
     <>
       <div className={props.className}
-           onMouseEnter={() => setAndUpdateHovering(true)}
-           onMouseLeave={() => setAndUpdateHovering(false)}
-           ref={mainRef}
-           onClick={onClick}
+        onMouseEnter={() => setAndUpdateHovering(true)}
+        onMouseLeave={() => setAndUpdateHovering(false)}
+        ref={mainRef}
+        onClick={onClick}
       >
         {props.children}
       </div>
@@ -51,6 +56,22 @@ export const HoverCard = (props) => {
         }
       }>
         {props.hover}
+      </div>
+      <div className={styles.hovercard + " " + (showModal ? styles.show : styles.hidden)} style={
+        {
+          top: top,
+          left: left,
+          border: `2px solid ${props.borderColor}`,
+          boxShadow: `0 6px 10px rgba(0, 0, 0, 0.25), 0 15px 12px ${props.boxShadowColor}`,
+          background: props.background,
+          color: "#fff",
+          width: "500px"
+        }
+      }>
+        {props.hover}
+        <div className={styles.more}>
+          more
+        </div>
       </div>
     </>
   )

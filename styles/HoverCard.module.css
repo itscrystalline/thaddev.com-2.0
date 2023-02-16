@@ -26,3 +26,10 @@
 .show {
     opacity: 1;
 }
+
+.more {
+    background-color: #303030;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
