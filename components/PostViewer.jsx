@@ -1,13 +1,13 @@
 import useSWR from "swr";
 import styles from "../styles/PostViewer.module.css";
-import {AiFillCalendar, AiFillEye} from "react-icons/ai";
+import {AiFillCalendar} from "react-icons/ai";
 import React from "react";
 import {useRouter} from "next/router";
 import {marked} from 'marked';
 
 
 export const PostViewer = (props) => {
-
+  const router = useRouter()
   //get post id from props passed in <PostViewer id={id}/>
   const id = props.id;
   //send a request to the api to increment the view count at https://api.thaddev.com/api-v1/postviews/increment?strapiID=${id}
@@ -39,9 +39,9 @@ export const PostViewer = (props) => {
         </div>
         Published at &nbsp;
         {post.attributes.publishedAt === post.attributes.updatedAt ?
-          <i>{timeStampToLocalDate(post.attributes.publishedAt)}, updated
-            at {timeStampToLocalDate(post.attributes.updatedAt)}</i> :
-          timeStampToLocalDate(post.attributes.publishedAt)
+          <i>{timeStampToLocalDate(post.attributes.publishedAt, router.locale)}, updated
+            at {timeStampToLocalDate(post.attributes.updatedAt, router.locale)}</i> :
+          timeStampToLocalDate(post.attributes.publishedAt, router.locale)
         }
       </div>
       <div className="content" dangerouslySetInnerHTML={{__html: htmlContent}}/>
@@ -49,8 +49,7 @@ export const PostViewer = (props) => {
   );
 }
 
-const timeStampToLocalDate = (timestamp) => {
-  const router = useRouter()
+const timeStampToLocalDate = (timestamp, locale) => {
   const date = new Date(timestamp);
   const options = {
     hour: "2-digit",
@@ -59,5 +58,5 @@ const timeStampToLocalDate = (timestamp) => {
     month: "2-digit",
     year: "2-digit"
   };
-  return date.toLocaleString(router.locale, options);
+  return date.toLocaleString(locale, options);
 }

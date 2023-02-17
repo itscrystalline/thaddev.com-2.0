@@ -7,6 +7,7 @@ import Image from "next/image";
 import {Tooltip} from "flowbite-react";
 import React from "react";
 import {FiArrowLeft, FiGithub} from "react-icons/fi";
+import Link from "next/link";
 
 export const Navbar = (props) => {
   const [isIntersecting, setIntersecting] = React.useState(false);
@@ -19,15 +20,16 @@ export const Navbar = (props) => {
   };
 
   React.useEffect(() => {
+    const curRef = ref.current;
     const observer = new IntersectionObserver(([entry]) => {
       setIntersecting(entry.isIntersecting);
     }, options);
 
     observer.observe(ref.current);
     return () => {
-      observer.unobserve(ref.current);
+      observer.unobserve(curRef);
     };
-  }, []);
+  });
 
   React.useEffect(() => {
     //returns array of length 8 where each 2 elements are the time left in days, hours, minutes, seconds padded with 0 if necessary
@@ -56,14 +58,14 @@ export const Navbar = (props) => {
            id="top">
         {props.noIcons ?
           <>
-            <a href={props.arrowTarget}><FiArrowLeft size={25}/></a>
+            <Link href={props.arrowTarget}><FiArrowLeft size={25}/></Link>
             <div className={styles.smallspacer}/>
           </>
           : <></>
         }
-        <a href={"/#main"}>
+        <Link href={"/#main"}>
           <Image src="/logolong.svg" width={194} height={52} priority={true}/>
-        </a>
+        </Link>
         {props.noIcons ?
           <>
             <span className={styles.title}>{props.name}</span>
@@ -71,7 +73,7 @@ export const Navbar = (props) => {
           :
           <>
             <div className={styles.spacer}/>
-            <a href={"/countdown"}>
+            <Link href={"/countdown"}>
               <div className={styles2.banner} id="top">
                 <div className={styles2.blacksquare}>
                   <code className={styles2.bigtext}>{timeLeft[0]}</code>
@@ -101,34 +103,34 @@ export const Navbar = (props) => {
                   <code className={styles2.bigtext}>{timeLeft[7]}</code>
                 </div>
               </div>
-            </a>
+            </Link>
             <div className={styles.spacer}/>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>View Source</p>} placement="bottom" arrow={false}>
-                <a href="https://github.com/MyNameTsThad/thaddev.com-2.0"><FiGithub size={25} color={"#ffffff"}/></a>
+                <Link href="https://github.com/MyNameTsThad/thaddev.com-2.0"><FiGithub size={25} color={"#ffffff"}/></Link>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>About Me</p>} placement="bottom" arrow={false}>
-                <a href="#about"><AiOutlineInfoCircle size={25} color={"#ffffff"}/></a>
+                <Link href="#about"><AiOutlineInfoCircle size={25} color={"#ffffff"}/></Link>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Technologies</p>} placement="bottom" arrow={false}>
-                <a href="#technologies"><BsPlug size={25} color={"#ffffff"}/></a>
+                <Link href="#technologies"><BsPlug size={25} color={"#ffffff"}/></Link>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Projects</p>} placement="bottom" arrow={false}>
-                <a href="#projects"><AiOutlineProject size={25} color={"#ffffff"}/>
-                </a>
+                <Link href="#projects"><AiOutlineProject size={25} color={"#ffffff"}/>
+                </Link>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Accomplishments</p>} placement="bottom" arrow={false}>
-                <a href="#accomplishments">
+                <Link href="#accomplishments">
                   <BsLightning size={25} color={"#ffffff"}/>
-                </a>
+                </Link>
               </Tooltip>
             </div>
           </>
@@ -140,47 +142,47 @@ export const Navbar = (props) => {
             className={styles.navbarside + " " + (isIntersecting ? styles.navbarsideclosed : styles.navbarsideopen)}>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Back to Top</p>} placement="left" arrow={false}>
-                <a href="#top"><HiChevronDoubleUp size={25} color={"#ffffff"}/></a>
+                <Link href="#top"><HiChevronDoubleUp size={25} color={"#ffffff"}/></Link>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>View Source</p>} placement="left" arrow={false}>
-                <a href="https://github.com/MyNameTsThad/thaddev.com-2.0"><FiGithub size={25} color={"#ffffff"}/></a>
+                <Link href="https://github.com/MyNameTsThad/thaddev.com-2.0"><FiGithub size={25} color={"#ffffff"}/></Link>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>About Me</p>} placement="left" arrow={false}>
-                <a href="#about"><AiOutlineInfoCircle size={25} color={"#ffffff"}/></a>
+                <Link href="#about"><AiOutlineInfoCircle size={25} color={"#ffffff"}/></Link>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Technologies</p>} placement="left" arrow={false}>
-                <a href="#technologies"><BsPlug size={25} color={"#ffffff"}/></a>
+                <Link href="#technologies"><BsPlug size={25} color={"#ffffff"}/></Link>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Projects</p>} placement="left" arrow={false}>
-                <a href="#projects"><AiOutlineProject size={25} color={"#ffffff"}/>
-                </a>
+                <Link href="#projects"><AiOutlineProject size={25} color={"#ffffff"}/>
+                </Link>
               </Tooltip>
             </div>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>Accomplishments</p>} placement="left" arrow={false}>
-                <a href="#accomplishments">
+                <Link href="#accomplishments">
                   <BsLightning size={25} color={"#ffffff"}/>
-                </a>
+                </Link>
               </Tooltip>
             </div>
           </aside>
         </> :
         <nav className={styles.stickbar + " " + (isIntersecting ? styles.stickbarclosed : styles.stickbaropen)}
              id="top">
-          <a href={props.arrowTarget}><FiArrowLeft size={25} color={"#ffffff"}/></a>
+          <Link href={props.arrowTarget}><FiArrowLeft size={25} color={"#ffffff"}/></Link>
           <div className={styles.smallspacer}/>
           <div className={styles.logo}>
-            <a href="/#main">
+            <Link href="/#main">
               <Image src="/logolong.svg" width={194} height={52} priority={true}/>
-            </a>
+            </Link>
           </div>
           <span className={styles.title}>{props.name}</span>
         </nav>

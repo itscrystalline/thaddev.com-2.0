@@ -12,13 +12,14 @@ export const GalleryIntro = () => {
   };
 
   React.useEffect(() => {
+    const curRef = ref.current;
     const observer = new IntersectionObserver(([entry]) => {
       setIntersecting(entry.isIntersecting);
     }, options);
 
     observer.observe(ref.current);
     return () => {
-      observer.unobserve(ref.current);
+      observer.unobserve(curRef);
     };
   });
 

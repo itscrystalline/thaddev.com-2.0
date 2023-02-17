@@ -27,7 +27,7 @@ export const HoverCard = (props) => {
     if (showModal) {
       setAndUpdateHovering(false);
     }
-  }, []);
+  });
 
   const onClick = () => {
     // show card when clicked
