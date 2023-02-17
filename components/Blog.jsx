@@ -3,9 +3,10 @@ import React from "react";
 import {useRouter} from 'next/router'
 import {BlogIntro} from "./BlogIntro";
 import useSWR from "swr";
-import {AiFillCalendar, AiFillEye} from "react-icons/ai";
+import {AiFillCalendar} from "react-icons/ai";
 
 export const Blog = () => {
+  const router = useRouter()
   const options = {method: 'GET', headers: {'Content-Type': 'application/json'}, body: 'false'};
   const fetcher = (options) => fetch(options).then(res => res.json())
 
@@ -40,13 +41,13 @@ export const Blog = () => {
                     <AiFillCalendar/>
                   </div>
                   {posts[0].attributes.publishedAt !== posts[0].attributes.updatedAt ?
-                    <i>{timeStampToLocalDate(posts[0].attributes.publishedAt)}</i> : timeStampToLocalDate(posts[0].attributes.publishedAt)
+                    <i>{timeStampToLocalDate(posts[0].attributes.publishedAt, router.locale)}</i> : timeStampToLocalDate(posts[0].attributes.publishedAt, router.locale)
                   }
                 </div>
               </div>
             </a>
             {posts.slice(1).map((post, index) => (
-              <a href={`/blog/posts?post=${post.id}`}>
+              <a href={`/blog/posts?post=${post.id}`} key={index}>
                 <div className={styles.box}>
                   <b className={styles.title}>
                     {post.attributes.title}
@@ -73,8 +74,7 @@ export const Blog = () => {
   )
 }
 
-const timeStampToLocalDate = (timestamp) => {
-  const router = useRouter()
+const timeStampToLocalDate = (timestamp, locale) => {
   const date = new Date(timestamp);
   const options = {
     hour: "2-digit",
@@ -83,5 +83,5 @@ const timeStampToLocalDate = (timestamp) => {
     month: "2-digit",
     year: "2-digit"
   };
-  return date.toLocaleString(router.locale, options);
+  return date.toLocaleString(locale, options);
 }

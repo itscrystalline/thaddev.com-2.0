@@ -58,16 +58,3 @@ export const Countdown = () => {
     </>
   )
 }
-
-const timeStampToLocalDate = (timestamp) => {
-  const router = useRouter()
-  const date = new Date(timestamp);
-  const options = {
-    hour: "2-digit",
-    minute: "2-digit",
-    day: "2-digit",
-    month: "2-digit",
-    year: "2-digit"
-  };
-  return date.toLocaleString(router.locale, options);
-}
