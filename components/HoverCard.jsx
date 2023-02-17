@@ -70,7 +70,7 @@ export const HoverCard = (props) => {
       }>
         {props.hover}
         <div className={styles.more}>
-          more
+          TBA
         </div>
       </div>
     </>

@@ -104,3 +104,12 @@
     opacity: .1;
     pointer-events: none;
 }
+
+.centeredSvg {
+    /*container for svg which is vertically centered*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}

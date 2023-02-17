@@ -1,4 +1,5 @@
 import styles from '../styles/Navbar.module.css';
+import styles2 from '../styles/Countdown.module.css';
 import {BsLightning, BsPlug} from "react-icons/bs";
 import {AiOutlineInfoCircle, AiOutlineProject} from "react-icons/ai";
 import {HiChevronDoubleUp} from "react-icons/hi";
@@ -9,6 +10,7 @@ import {FiArrowLeft, FiGithub} from "react-icons/fi";
 
 export const Navbar = (props) => {
   const [isIntersecting, setIntersecting] = React.useState(false);
+  const [timeLeft, setTimeLeft] = React.useState([0, 0, 0, 0, 0, 0, 0, 0]);
   const ref = React.useRef(null);
   const options = {
     root: null,
@@ -26,6 +28,27 @@ export const Navbar = (props) => {
       observer.unobserve(ref.current);
     };
   }, []);
+
+  React.useEffect(() => {
+    //returns array of length 8 where each 2 elements are the time left in days, hours, minutes, seconds padded with 0 if necessary
+    const targetTime = 1677133800000;
+    const timeLeftMillis = targetTime - Date.now();
+
+    const seconds = Math.floor((timeLeftMillis / 1000) % 60);
+    const minutes = Math.floor((timeLeftMillis / 1000 / 60) % 60);
+    const hours = Math.floor((timeLeftMillis / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(timeLeftMillis / (1000 * 60 * 60 * 24));
+
+    //convert to string and pad with 0 if necessary
+    const daysStr = days.toString().padStart(2, "0");
+    const hoursStr = hours.toString().padStart(2, "0");
+    const minutesStr = minutes.toString().padStart(2, "0");
+    const secondsStr = seconds.toString().padStart(2, "0");
+
+    // split into array of length 8
+    setTimeLeft([daysStr[0], daysStr[1], hoursStr[0], hoursStr[1], minutesStr[0], minutesStr[1], secondsStr[0], secondsStr[1]]);
+
+  }, [timeLeft]);
 
   return (
     <>
@@ -47,6 +70,38 @@ export const Navbar = (props) => {
           </>
           :
           <>
+            <div className={styles.spacer}/>
+            <a href={"/countdown"}>
+              <div className={styles2.banner} id="top">
+                <div className={styles2.blacksquare}>
+                  <code className={styles2.bigtext}>{timeLeft[0]}</code>
+                </div>
+                <div className={styles2.blacksquare}>
+                  <code className={styles2.bigtext}>{timeLeft[1]}</code>
+                </div>
+                <code className={styles2.colon}>:</code>
+                <div className={styles2.blacksquare}>
+                  <code className={styles2.bigtext}>{timeLeft[2]}</code>
+                </div>
+                <div className={styles2.blacksquare}>
+                  <code className={styles2.bigtext}>{timeLeft[3]}</code>
+                </div>
+                <code className={styles2.colon}>:</code>
+                <div className={styles2.blacksquare}>
+                  <code className={styles2.bigtext}>{timeLeft[4]}</code>
+                </div>
+                <div className={styles2.blacksquare}>
+                  <code className={styles2.bigtext}>{timeLeft[5]}</code>
+                </div>
+                <code className={styles2.colon}>:</code>
+                <div className={styles2.blacksquare}>
+                  <code className={styles2.bigtext}>{timeLeft[6]}</code>
+                </div>
+                <div className={styles2.blacksquare}>
+                  <code className={styles2.bigtext}>{timeLeft[7]}</code>
+                </div>
+              </div>
+            </a>
             <div className={styles.spacer}/>
             <div className={styles.icons}>
               <Tooltip content={<p style={{fontSize: "smaller"}}>View Source</p>} placement="bottom" arrow={false}>

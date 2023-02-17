@@ -1,15 +1,15 @@
-import { Button, Timeline } from "flowbite-react";
+import {Button, Timeline} from "flowbite-react";
 import styles from "../styles/Accomplishments.module.css";
 import useSWR from 'swr';
-import { BsCardImage } from "react-icons/bs";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import {BsCardImage} from "react-icons/bs";
+import {AiOutlineArrowRight} from "react-icons/ai";
 import Image from "next/image";
 
 export const Accomplishments = () => {
-  const options = { method: 'GET', headers: { 'Content-Type': 'application/json' }, body: 'false' };
+  const options = {method: 'GET', headers: {'Content-Type': 'application/json'}, body: 'false'};
   const fetcher = (options) => fetch(options).then(res => res.json())
 
-  const { data, error } = useSWR('https://api.thaddev.com/api-v1/codingstats/get', fetcher)
+  const {data, error} = useSWR('https://api.thaddev.com/api-v1/codingstats/get', fetcher)
 
   let response = null;
   if (error) response = <div color={"#fff"}>Loading failed! Check the browser console for details.</div>
@@ -144,16 +144,20 @@ export const Accomplishments = () => {
             </div>
           </div>
 
+
           <div className={styles.buttons}>
             <a href={"/gallery#Hackerrank"}>
               <div className={styles.button}>
                 <Button outline={true} gradientDuoTone="tealToLime">
-                  <BsCardImage size={25} /> &nbsp; &nbsp; View certificates in gallery &nbsp; &nbsp; <AiOutlineArrowRight />
+                  <BsCardImage size={25}/>
+                  &nbsp; &nbsp; View certificates in gallery &nbsp; &nbsp;
+                  <AiOutlineArrowRight/>
                 </Button>
               </div>
             </a>
           </div>
         </a>
+
 
         <a href="https://leetcode.com/ThadDev/">
           <Timeline.Body>
