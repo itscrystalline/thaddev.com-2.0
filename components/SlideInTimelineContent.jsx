@@ -12,15 +12,17 @@ export const SlideInTimelineContent = (props) => {
   };
 
   React.useEffect(() => {
+    const refCopy = ref.current;
+
     const observer = new IntersectionObserver(([entry]) => {
       setIntersecting(entry.isIntersecting);
     }, options);
 
     observer.observe(ref.current);
     return () => {
-      observer.unobserve(ref.current);
+      observer.unobserve(refCopy);
     };
-  }, []);
+  });
 
   return (
     <div ref={ref} className={isIntersecting ? styles.show : styles.hidden}>

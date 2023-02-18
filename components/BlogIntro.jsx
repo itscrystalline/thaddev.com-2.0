@@ -12,13 +12,15 @@ export const BlogIntro = () => {
   };
 
   React.useEffect(() => {
+    const refCopy = ref.current;
+
     const observer = new IntersectionObserver(([entry]) => {
       setIntersecting(entry.isIntersecting);
     }, options);
 
     observer.observe(ref.current);
     return () => {
-      observer.unobserve(ref.current);
+      observer.unobserve(refCopy);
     };
   });
 

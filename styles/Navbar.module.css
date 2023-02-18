@@ -8,6 +8,22 @@
     align-items: center;
 }
 
+/* make navbar items stack vertically in a small screen */
+@media (max-width: 768px) {
+    .navbar {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        flex-direction: column;
+        height: fit-content;
+        background: #1f1f1f;
+        align-items: center;
+    }
+}
+
+.flexrow {
+    flex-direction: row;
+}
+
 .hidden {
     opacity: 0;
 }
@@ -26,6 +42,13 @@
     flex-wrap: nowrap;
     flex: auto;
     float: left;
+}
+
+/* disable spacer when screen is small */
+@media (max-width: 768px) {
+    .spacer {
+        height: 10px;
+    }
 }
 
 .smallspacer {
@@ -47,8 +70,28 @@
     transition: color 0.2s;
 }
 
+/* limit width when screen is small and stack horizontally */
+@media (max-width: 768px) {
+    .icons {
+        width: fit-content;
+        margin: 10px;
+    }
+}
+
 .icons:hover {
     color: #c2c2c2;
+}
+
+.iconsbox {
+}
+
+@media (max-width: 768px) {
+    .iconsbox {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 20px;
+    }
 }
 
 .stickbar {
@@ -113,6 +156,19 @@
     font-weight: 600;
     color: #ededed;
     padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        padding-left: 10px;
+    }
+}
+
+.hiddenwhensmall {}
+@media (max-width: 768px) {
+    .hiddenwhensmall {
+        display: none;
+    }
 }
 
 
