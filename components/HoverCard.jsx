@@ -1,5 +1,7 @@
 import styles from "../styles/HoverCard.module.css";
 import React from "react";
+import {HiOutlineCode} from "react-icons/hi";
+import {BsPlay} from "react-icons/bs";
 
 export const HoverCard = (props) => {
   const [hovering, setHovering] = React.useState(false); // initiate it at false
@@ -38,10 +40,10 @@ export const HoverCard = (props) => {
   return (
     <>
       <div className={props.className}
-        onMouseEnter={() => setAndUpdateHovering(true)}
-        onMouseLeave={() => setAndUpdateHovering(false)}
-        ref={mainRef}
-        onClick={onClick}
+           onMouseEnter={() => setAndUpdateHovering(true)}
+           onMouseLeave={() => setAndUpdateHovering(false)}
+           ref={mainRef}
+           onClick={onClick}
       >
         {props.children}
       </div>
@@ -70,7 +72,16 @@ export const HoverCard = (props) => {
       }>
         {props.hover}
         <div className={styles.more}>
-          TBA
+          <div className={styles.sameline}>
+            <div className={styles.margin10}>
+              <HiOutlineCode/>
+            </div>
+            View Source
+            <div className={styles.margin10}>
+              <BsPlay/>
+            </div>
+            View App
+          </div>
         </div>
       </div>
     </>

@@ -20,6 +20,29 @@
     margin: auto auto 7vh;
 }
 
+@media (max-width: 768px) {
+   /* scale down to fit screen */
+    .bigbanner {
+        padding: 5px;
+        width: fit-content;
+        height: 60px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    .bigblacksquare {
+        height: 80%;
+        width: fit-content;
+        padding: 3px 5px;
+        margin-right: 3px;
+        margin-left: 3px;
+        border-radius: 6px;
+        background: #101010;
+    }
+}
+
 .blacksquare {
     height: 80%;
     width: fit-content;
@@ -58,6 +81,19 @@
     font-size: 7rem;
     font-weight: 800;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .bigbigtext {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    .bigcolon {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #101010;
+    }
 }
 
 
