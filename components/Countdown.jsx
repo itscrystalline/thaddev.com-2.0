@@ -51,7 +51,7 @@ export const Countdown = () => {
       if (window.innerWidth <= 768) setIsMobile(true);
       else setIsMobile(false);
     })
-  })
+  }, [])
 
   if (isMobile){
     return (
@@ -91,11 +91,11 @@ export const Countdown = () => {
           <br/>
           <div style={{ textAlign: "center"}}><span className={styles.text + " " + styles.stagger + " " + (isSecsDone? styles.show: styles.hidden)}>
           I, and my friends have finished 9th grade! Kinda sad that most of my friends will probably never <br/>
-          see me in person again, but hey, at least we have the memories. I'm looking forward to the future, <br/>
+          see me in person again, but hey, at least we have the memories. I&apos;m looking forward to the future, <br/>
           upwards and onwards! I will still be in touch with most of my friends now, probably online. On the bright side,<br/>
-          this will probably be the most relaxing break I will have in the past 3 years. I still don't like the school,<br/>
-          but it does give me some good memories staying, living, and having fun there, oh well, I'll probably never return<br/>
-          here in at least 10 years. We'll see then what has changed. I'm looking forward to the future, and what it has in store for me!
+          this will probably be the most relaxing break I will have in the past 3 years. I still don&apos;t like the school,<br/>
+          but it does give me some good memories staying, living, and having fun there, oh well, I&apos;ll probably never return<br/>
+          here in at least 10 years. We&apos;ll see then what has changed. I&apos;m looking forward to the future, and what it has in store for me!
           <br/> <br/>
           <b>Bye for now, My friends!</b>
         </span></div>
@@ -139,11 +139,11 @@ export const Countdown = () => {
         <br/>
         <div style={{ textAlign: "center"}}><span className={styles.text + " " + styles.stagger + " " + (isSecsDone? styles.show: styles.hidden)}>
           I, and my friends have finished 9th grade! Kinda sad that most of my friends will probably never <br/>
-          see me in person again, but hey, at least we have the memories. I'm looking forward to the future, <br/>
+          see me in person again, but hey, at least we have the memories. I&apos;m looking forward to the future, <br/>
           upwards and onwards! I will still be in touch with most of my friends now, probably online. On the bright side,<br/>
-          this will probably be the most relaxing break I will have in the past 3 years. I still don't like the school,<br/>
-          but it does give me some good memories staying, living, and having fun there, oh well, I'll probably never return<br/>
-          here in at least 10 years. We'll see then what has changed. I'm looking forward to the future, and what it has in store for me!
+          this will probably be the most relaxing break I will have in the past 3 years. I still don&apos;t like the school,<br/>
+          but it does give me some good memories staying, living, and having fun there, oh well, I&apos;ll probably never return<br/>
+          here in at least 10 years. We&apos;ll see then what has changed. I&apos;m looking forward to the future, and what it has in store for me!
           <br/> <br/>
           <b>Bye for now, My friends!</b>
         </span></div>
