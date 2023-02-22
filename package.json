@@ -1,6 +1,6 @@
 {
   "name": "thaddev.com-new",
-  "version": "0.1.0",
+  "version": "prod",
   "private": true,
   "scripts": {
     "dev": "next dev",

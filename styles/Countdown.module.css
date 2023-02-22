@@ -76,6 +76,7 @@
     font-size: 7rem;
     font-weight: 600;
     color: #fff;
+    margin: auto;
 }
 .bigcolon {
     font-size: 7rem;
@@ -96,5 +97,42 @@
     }
 }
 
+.frame {
+    padding-bottom: 100px;
+}
+
+.main {
+    white-space: pre;
+    font-size: 7rem;
+    font-weight: bolder;
+    /* gradient text */
+    background: linear-gradient(90deg, #FFAA00 0%, #FF0080 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text {
+    white-space: pre;
+    font-size: 1.5rem;
+    color: #c4c4c4;
+}
+
+.hidden {
+    /* hidden box */
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all 0.3s;
+}
+
+.show {
+    /* show box */
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s;
+}
+
+.stagger {
+    transition-delay: 100ms;
+}
 
 
