@@ -38,7 +38,13 @@ export const Navbar = (props) => {
     setInterval(() => {
       //returns array of length 8 where each 2 elements are the time left in days, hours, minutes, seconds padded with 0 if necessary
       const targetTime = 1677133800000;
-      const timeLeftMillis = targetTime - Date.now();
+      const timeLeftMillis = Math.max(targetTime - Date.now(), 0);
+
+      if (timeLeftMillis === 0) {
+        setTimeLeft(["W", "E", "R", "E", "D", "O", "N", "E"]);
+        setIsDaysDone(true);
+        setIsSecsDone(true);
+      }
 
       const seconds = Math.floor((timeLeftMillis / 1000) % 60);
       const minutes = Math.floor((timeLeftMillis / 1000 / 60) % 60);

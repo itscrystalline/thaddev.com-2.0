@@ -10,7 +10,13 @@ export const Countdown = () => {
     setInterval(() => {
       //returns array of length 8 where each 2 elements are the time left in days, hours, minutes, seconds padded with 0 if necessary
       const targetTime = 1677133800000;
-      const timeLeftMillis = targetTime - Date.now();
+      const timeLeftMillis = Math.max(targetTime - Date.now(), 0);
+
+      if (timeLeftMillis === 0) {
+        setTimeLeft(["W", "E", "R", "E", "D", "O", "N", "E"]);
+        setIsDaysDone(true);
+        setIsSecsDone(true);
+      }
 
       const seconds = Math.floor((timeLeftMillis / 1000) % 60);
       const minutes = Math.floor((timeLeftMillis / 1000 / 60) % 60);
@@ -88,13 +94,13 @@ export const Countdown = () => {
         </div>
         <div className={styles.frame}>
           <div style={{ textAlign: "center"}}><span className={styles.main + " " + (isSecsDone? styles.show: styles.hidden)}>Finally!</span></div>
-          <br/>
+          
           <div style={{ textAlign: "center"}}><span className={styles.text + " " + styles.stagger + " " + (isSecsDone? styles.show: styles.hidden)}>
-          I, and my friends have finished 9th grade! Kinda sad that most of my friends will probably never <br/>
-          see me in person again, but hey, at least we have the memories. I&apos;m looking forward to the future, <br/>
-          upwards and onwards! I will still be in touch with most of my friends now, probably online. On the bright side,<br/>
-          this will probably be the most relaxing break I will have in the past 3 years. I still don&apos;t like the school,<br/>
-          but it does give me some good memories staying, living, and having fun there, oh well, I&apos;ll probably never return<br/>
+          I, and my friends have finished 9th grade! Kinda sad that most of my friends will probably never 
+          see me in person again, but hey, at least we have the memories. I&apos;m looking forward to the future, 
+          upwards and onwards! I will still be in touch with most of my friends now, probably online. On the bright side,
+          this will probably be the most relaxing break I will have in the past 3 years. I still don&apos;t like the school,
+          but it does give me some good memories staying, living, and having fun there, oh well, I&apos;ll probably never return
           here in at least 10 years. We&apos;ll see then what has changed. I&apos;m looking forward to the future, and what it has in store for me!
           <br/> <br/>
           <b>Bye for now, My friends!</b>
@@ -136,7 +142,7 @@ export const Countdown = () => {
       </div>
       <div className={styles.frame}>
         <div style={{ textAlign: "center"}}><span className={styles.main + " " + (isSecsDone? styles.show: styles.hidden)}>Finally!</span></div>
-        <br/>
+        
         <div style={{ textAlign: "center"}}><span className={styles.text + " " + styles.stagger + " " + (isSecsDone? styles.show: styles.hidden)}>
           I, and my friends have finished 9th grade! Kinda sad that most of my friends will probably never <br/>
           see me in person again, but hey, at least we have the memories. I&apos;m looking forward to the future, <br/>
@@ -144,7 +150,7 @@ export const Countdown = () => {
           this will probably be the most relaxing break I will have in the past 3 years. I still don&apos;t like the school,<br/>
           but it does give me some good memories staying, living, and having fun there, oh well, I&apos;ll probably never return<br/>
           here in at least 10 years. We&apos;ll see then what has changed. I&apos;m looking forward to the future, and what it has in store for me!
-          <br/> <br/>
+          <br/><br/>
           <b>Bye for now, My friends!</b>
         </span></div>
       </div>
