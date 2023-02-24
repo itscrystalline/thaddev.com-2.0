@@ -19,7 +19,7 @@
 
 .logo {
     width: 300px;
-    height: 70px;
+    min-height: 70px;
     padding: 20px;
     margin: 15px;
     background: #292929;

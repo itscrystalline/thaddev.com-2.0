@@ -37,6 +37,11 @@ export const HoverCard = (props) => {
     setAndUpdateHovering(false);
   }
 
+  const onModalClick = () => {
+    // show card when clicked
+    setShowModal(false);
+  }
+
   return (
     <>
       <div className={props.className}
@@ -59,7 +64,7 @@ export const HoverCard = (props) => {
       }>
         {props.hover}
       </div>
-      <div className={styles.hovercard + " " + (showModal ? styles.show : styles.hidden)} style={
+      <div className={styles.permcard + " " + (showModal ? styles.show : styles.permhidden)} style={
         {
           top: top,
           left: left,
@@ -68,19 +73,36 @@ export const HoverCard = (props) => {
           background: props.background,
           color: "#fff",
           width: "500px"
-        }
-      }>
+        }}
+           onClick={onModalClick}
+      >
         {props.hover}
         <div className={styles.more}>
+          {props.ytid ?
+            <iframe className={styles.yt} src={"https://www.youtube.com/embed/" + props.ytid} title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen">
+            </iframe> : null
+          }
           <div className={styles.sameline}>
-            <div className={styles.margin10}>
-              <HiOutlineCode/>
-            </div>
-            View Source
-            <div className={styles.margin10}>
-              <BsPlay/>
-            </div>
-            View App
+            {props.source ?
+              <a href={props.source} className={styles.inlinesvg}>
+                <div className={styles.margin10}>
+                  <HiOutlineCode/>
+                </div>
+                View Source
+              </a>
+              : null
+            }
+
+            {props.view ?
+              <a href={props.view} className={styles.inlinesvg}>
+                <div className={styles.margin10}>
+                  <BsPlay/>
+                </div>
+                See Live
+              </a>
+              : null
+            }
           </div>
         </div>
       </div>
