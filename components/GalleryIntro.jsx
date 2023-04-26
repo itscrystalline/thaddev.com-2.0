@@ -30,7 +30,6 @@ export const GalleryIntro = () => {
         <br/>
         <i>(not a lot though, makes me regret that i didnt take more pictures)</i>
         <br/>
-        <i>(WIP, will add descriptions to the images later)</i>
       </div>
     </div>
   )

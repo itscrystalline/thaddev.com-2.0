@@ -115,39 +115,6 @@ export const Navbar = (props) => {
           :
           <>
             <div className={styles.spacer}/>
-            <a href={"/countdown"}>
-              <div className={styles2.banner} id="top">
-                <div className={styles2.blacksquare}>
-                  <code className={styles2.bigtext}>{timeLeft[0]}</code>
-                </div>
-                <div className={styles2.blacksquare}>
-                  <code className={styles2.bigtext}>{timeLeft[1]}</code>
-                </div>
-                <code className={styles2.colon}>{isDaysDone? "'" : ":"}</code>
-                <div className={styles2.blacksquare}>
-                  <code className={styles2.bigtext}>{timeLeft[2]}</code>
-                </div>
-                <div className={styles2.blacksquare}>
-                  <code className={styles2.bigtext}>{timeLeft[3]}</code>
-                </div>
-                <code className={styles2.colon}>:</code>
-                <div className={styles2.blacksquare}>
-                  <code className={styles2.bigtext}>{timeLeft[4]}</code>
-                </div>
-                <div className={styles2.blacksquare}>
-                  <code className={styles2.bigtext}>{timeLeft[5]}</code>
-                </div>
-                <code className={styles2.colon}>:</code>
-                <div className={styles2.blacksquare}>
-                  <code className={styles2.bigtext}>{timeLeft[6]}</code>
-                </div>
-                <div className={styles2.blacksquare}>
-                  <code className={styles2.bigtext}>{timeLeft[7]}</code>
-                </div>
-                {isSecsDone? <code className={styles2.colon}>!</code> : null}
-              </div>
-            </a>
-            <div className={styles.spacer}/>
             <div className={styles.iconsbox}>
               <div className={styles.icons}>
                 <Tooltip content={<p style={{fontSize: "smaller"}}>View Source</p>} placement="bottom" arrow={false}>

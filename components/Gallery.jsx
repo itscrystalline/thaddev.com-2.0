@@ -121,6 +121,26 @@ export const Gallery = () => {
             </div>
           </div>
         </div>
+
+        <b className={styles.subtitle}
+           onMouseEnter={() => ref3.current.textContent += " #"}
+           onMouseLeave={() => ref3.current.textContent = ref3.current.textContent.slice(0, -2)}
+           onClick={() => router.replace(router.pathname + "#STEMOLYMPIAD").then(() => navigator.clipboard.writeText(window.location.origin + router.asPath))}
+           ref={ref3}
+           id="VERSOHACK2022"
+        >International STEM Olympiad 2023</b>
+        <div className={styles.grid}>
+          <div className={styles.box + " " + styles.stem}>
+            <div className={styles.fill}>
+              <Image src={"https://cloud.thaddev.com/s/r4jdTjBKjSrD942/preview"} width={500} height={375} objectFit={"cover"}/>
+            </div>
+          </div>
+          <div className={styles.box + " " + styles.stem}>
+            <div className={styles.fill}>
+              <Image src={"https://cloud.thaddev.com/s/FoXHFoe9PRpFbce/preview"} width={500} height={375} objectFit={"cover"}/>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
