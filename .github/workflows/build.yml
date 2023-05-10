@@ -49,11 +49,9 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-      - shell: bash
-        run: |
-          ls .
-          ls ..
-          ls ../..
+      - run: ls .
+      - run: ls ..
+      - run: ls ../..
 
       - name: Deploy Stack
         uses: kgierke/portainer-stack-deployment@v1
