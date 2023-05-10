@@ -17,6 +17,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
       - name: Set up QEMU - arm
         if: ${{ runner.arch == 'X86' || runner.arch == 'X64' }}
         id: qemu-arm64
