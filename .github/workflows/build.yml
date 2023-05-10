@@ -57,4 +57,4 @@ jobs:
           portainer-password: ${{ secrets.PORTAINER_PASSWORD }}
           portainer-endpoint: 2
           name: new-thaddev
-          file: docker-compose.yml
+          file: ./docker-compose.yml
