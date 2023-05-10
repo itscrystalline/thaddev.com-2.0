@@ -1,0 +1,8 @@
+version: '3'
+services:
+  thaddev:
+    container_name: thaddev-2.0
+    image: ghcr.io/mynametsthad/thaddev.com-2.0:main
+    restart: unless-stopped
+    ports:
+      - "3030:3000"
