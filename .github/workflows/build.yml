@@ -48,9 +48,9 @@ jobs:
       - name: Deploy Stack
         uses: kgierke/portainer-stack-deployment@v1
         with:
-          portainer-url: "https://pi-portainer.thaddev.com"
-          portainer-username: "IWant2TryHard"
-          portainer-password: "Portainer_TH2147483648"
+          portainer-url: ${{ secrets.PORTAINER_ENDPOINT }}
+          portainer-username: ${{ secrets.PORTAINER_USERNAME }}
+          portainer-password: ${{ secrets.PORTAINER_PASSWORD }}
           portainer-endpoint: 2
           name: new-thaddev
           file: ../../docker-compose.yml
