@@ -28,7 +28,7 @@ export const About = () => {
     <div className={styles.box} ref={ref} id="about">
       <h1 className={styles.header + " " + (isIntersecting ? styles.show : styles.hidden)}>Who am I?</h1>
       <div className={styles.stagger + " " + (isIntersecting ? styles.show : styles.hidden) + " " + styles.text}>
-        I am a {getAge(Date.now())} year old from Thailand, currently studying in 9th grade.
+        I am a {getAge(Date.now())} year old from Thailand, currently studying in a higher education &#40;อุดมศึกษา&#41; at KOSEN-KMITL in Bangkok.
         <br/>
         I have a passion for programming since I was 9, So naturally I have interest in anything computer-related.
         <br/>
