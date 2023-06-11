@@ -1,6 +1,6 @@
 .main {
-    background: rgb(255,170,0);
-    background: linear-gradient(90deg, rgba(255,170,0,1) 0%, rgba(255,15,111,1) 100%);
+    background: #5a83ff;
+    background: linear-gradient(90deg, #5a83ff 0%, #fe2bf4 100%);
     padding: 1rem;
     display: flex;
     justify-content: space-between;

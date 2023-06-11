@@ -41,8 +41,8 @@ export const Projects = () => {
                              Interactive map for the Princess Chulabhorn Science High School Chonburi.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/thaddev.com/blob/master/src/pages/pccchon-locator.js"}
                        view={"https://old.thaddev.com/pccchon-locator/"}
@@ -62,8 +62,8 @@ export const Projects = () => {
                              using the Forge and Fabric modding APIs with Java.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        ytid={"-wjA-Ry6BPc"}
                        source={"https://github.com/MyNameTsThad/IW2THs-Shortbows"}
@@ -83,8 +83,8 @@ export const Projects = () => {
                              branched into other mods. Built using the Forge and Fabric modding APIs with Java.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/CoolIdeasMod"}
             >
@@ -103,8 +103,8 @@ export const Projects = () => {
                              Fabric modding API with Java.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/CombatUtilities"}
             >
@@ -122,8 +122,8 @@ export const Projects = () => {
                              Docker and Cloudflare.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/thaddev.com-2.0"}
                        view={"https://thaddev.com"}
@@ -144,8 +144,8 @@ export const Projects = () => {
                              discord server. Built with Java using the JDA library.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/SomeDiscordBot"}
             >
@@ -162,8 +162,8 @@ export const Projects = () => {
                              Boot.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                         source={"https://github.com/MyNameTsThad/project-apis"}
             >
@@ -183,8 +183,8 @@ export const Projects = () => {
                              Built using the NodeMCU ESP8266 with Arduino and the Blynk platform library.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/PCCCHON_Project_IoTDoorLock-V2"}
             >
@@ -199,8 +199,8 @@ export const Projects = () => {
                              <hr className={styles.seperator}/>
                              A text-based version of the classic puzzle game Sudoku made in Vanilla Python. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/pydoku"}
             >
@@ -217,8 +217,8 @@ export const Projects = () => {
                              <hr className={styles.seperator}/>
                              An mock android app for the VERSO HACK 2022 hackathon. Built using Java. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/VERSOHACK2022-BoostedBurgersApp"}
             >
@@ -235,8 +235,8 @@ export const Projects = () => {
                              <hr className={styles.seperator}/>
                              A LINE bot that can be used for various things. Built using Java and the LINE library. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                         source={"https://github.com/MyNameTsThad/HelpfulUtilsBot-LINE"}
             >
@@ -255,8 +255,8 @@ export const Projects = () => {
                              and
                              C#. Made for the ProcJam Game Jam on itch.io. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                         source={"https://github.com/MyNameTsThad/GeometryMix"}
                        view={"https://itch.io/jam/procjam/rate/1315310"}
@@ -276,8 +276,8 @@ export const Projects = () => {
                              and
                              Forge. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                         source={"https://github.com/MyNameTsThad/Hytils-1.8.9"}
             >
@@ -294,8 +294,8 @@ export const Projects = () => {
                              <hr className={styles.seperator}/>
                              An android app for taking short, simple, text notes, simple as that. Built using Java. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/NotesApp"}
             >
@@ -314,8 +314,8 @@ export const Projects = () => {
                              mode &apos;Skyblock&apos; as
                              a Forge mod. Built using Java and Forge. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                         source={"https://github.com/MyNameTsThad/SkyblockItemsPlusPlus-1.16.5"}
             >
@@ -333,8 +333,8 @@ export const Projects = () => {
                              A simple game where you chop down a set amount of trees with apples in the given time.
                              Currently live on the Google Play Store. Built using Unity and C#. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        ytid={"PGnKGzeVHpc"}
                        source={"https://github.com/MyNameTsThad/Tree-Game"}
@@ -355,8 +355,8 @@ export const Projects = () => {
                              Google Play Store.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        ytid={"p9gJwQmi5VA"}
                        source={"https://github.com/MyNameTsThad/BattleParkour_Project"}
@@ -377,8 +377,8 @@ export const Projects = () => {
                              Built
                              using Java and Forge. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/HealthMod"}
             >
@@ -397,8 +397,8 @@ export const Projects = () => {
                              <hr className={styles.seperator}/>
                              A text-based version of the classic puzzle game Sudoku made in Vanilla Python. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/pydoku"}
             >
@@ -417,8 +417,8 @@ export const Projects = () => {
                              and
                              C#. Made for the ProcJam Game Jam on itch.io. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/GeometryMix"}
                        view={"https://itch.io/jam/procjam/rate/1315310"}
@@ -437,8 +437,8 @@ export const Projects = () => {
                              A simple game where you chop down a set amount of trees with apples in the given time.
                              Currently live on the Google Play Store. Built using Unity and C#. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        ytid={"PGnKGzeVHpc"}
                        source={"https://github.com/MyNameTsThad/Tree-Game"}
@@ -459,8 +459,8 @@ export const Projects = () => {
                              Google Play Store.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        ytid={"p9gJwQmi5VA"}
                        source={"https://github.com/MyNameTsThad/BattleParkour_Project"}
@@ -482,8 +482,8 @@ export const Projects = () => {
                              Map for the Princess Chulabhorn Science High School Chonburi.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/thaddev.com/blob/master/src/pages/pccchon-locator.js"}
                        view={"https://old.thaddev.com/pccchon-locator/"}
@@ -503,8 +503,8 @@ export const Projects = () => {
                              Docker and Cloudflare.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/thaddev.com-2.0"}
                        view={"https://thaddev.com"}
@@ -526,8 +526,8 @@ export const Projects = () => {
                              Boot.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/project-apis"}
             >
@@ -550,8 +550,8 @@ export const Projects = () => {
                              using the Forge and Fabric modding APIs with Java.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        ytid={"-wjA-Ry6BPc"}
                        source={"https://github.com/MyNameTsThad/IW2THs-Shortbows"}
@@ -571,8 +571,8 @@ export const Projects = () => {
                              branched into other mods. Built using the Forge and Fabric modding APIs with Java.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/CoolIdeasMod"}
             >
@@ -591,8 +591,8 @@ export const Projects = () => {
                              Fabric modding API with Java.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/CombatUtilities"}
             >
@@ -611,8 +611,8 @@ export const Projects = () => {
                              and
                              Forge. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/Hytils-1.8.9"}
             >
@@ -631,8 +631,8 @@ export const Projects = () => {
                              mode &apos;Skyblock&apos; as
                              a Forge mod. Built using Java and Forge. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/SkyblockItemsPlusPlus-1.16.5"}
             >
@@ -651,8 +651,8 @@ export const Projects = () => {
                              Built
                              using Java and Forge. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/HealthMod"}
             >
@@ -673,8 +673,8 @@ export const Projects = () => {
                              <hr className={styles.seperator}/>
                              An mock android app for the VERSO HACK 2022 hackathon. Built using Java. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/VERSOHACK2022-BoostedBurgersApp"}
             >
@@ -691,8 +691,8 @@ export const Projects = () => {
                              <hr className={styles.seperator}/>
                              An android app for taking short, simple, text notes, simple as that. Built using Java. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/NotesApp"}
             >
@@ -716,8 +716,8 @@ export const Projects = () => {
                              discord server. Built with Java using the JDA library.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/SomeDiscordBot"}
             >
@@ -737,8 +737,8 @@ export const Projects = () => {
                              Built using the NodeMCU ESP8266 with Arduino and the Blynk platform library.
                            </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/PCCCHON_Project_IoTDoorLock-V2"}
             >
@@ -755,8 +755,8 @@ export const Projects = () => {
                              <hr className={styles.seperator}/>
                              A LINE bot that can be used for various things. Built using Java and the LINE library. </>
                          }
-                       borderColor={"#ff0f6f"}
-                       boxShadowColor={"#ff0f6f1e"}
+                       borderColor={"#5a83ff"}
+                       boxShadowColor={"#5a83ff1e"}
                        background={"#292929"}
                        source={"https://github.com/MyNameTsThad/HelpfulUtilsBot-LINE"}
             >

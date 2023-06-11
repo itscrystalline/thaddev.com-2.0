@@ -28,7 +28,7 @@
 
 .box:hover {
     transition: all 0.2s;
-    border: 1px solid #ffaa00 !important;
+    border: 1px solid #7f7aff !important;
     transform: scale(1.005);
 }
 

@@ -34,7 +34,7 @@ export const FootStuff = () => {
         <div className={styles.buttons}>
           <a href={"/gallery"}>
             <div className={styles.button}>
-              <Button outline={true} gradientDuoTone="pinkToOrange" on>
+              <Button outline={true} gradientDuoTone="purpleToBlue" on>
                 <BsCardImage size={25}/> &nbsp; &nbsp; Gallery &nbsp; &nbsp; <AiOutlineArrowRight/>
               </Button>
             </div>
@@ -42,13 +42,13 @@ export const FootStuff = () => {
 
           <a href={"/blog"}>
             <div className={styles.button}>
-              <Button outline={true} gradientDuoTone="pinkToOrange">
+              <Button outline={true} gradientDuoTone="purpleToBlue">
                 <BsListNested size={25}/> &nbsp; &nbsp; Blog &nbsp; &nbsp; <AiOutlineArrowRight/>
               </Button>
             </div>
           </a>
 
-          <Tooltip content="Coming Soon!" placement="top">
+          <Tooltip content="Coming Soon...?" placement="top">
             <div className={styles.disabledcur}>
               <div className={styles.disabled}>
                 <div className={styles.button}>
