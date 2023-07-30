@@ -6,7 +6,7 @@ const nextConfig = {
         domains: [
             'www.vectorlogo.zone',
             "upload.vectorlogo.zone",
-            "i.redd.it",
+            "cdn.discordapp.com",
             "avatars.githubusercontent.com",
             "cdn.worldvectorlogo.com",
             "hrcdn.net",

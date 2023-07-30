@@ -52,7 +52,7 @@ export const Technologies = () => {
         </Tooltip>
         <Tooltip content={<p style={{fontSize: "smaller"}}>FabricMC</p>} placement="bottom" arrow={true}>
           <div className={styles.logo}>
-            <Image src="https://i.redd.it/hpi2fcsou3471.png" width={45} height={45} loading={"lazy"} alt={"fabricmc"}/>
+            <Image src="https://cloud.thaddev.com/s/k4dKKFGJY7r7HdS/preview" width={45} height={45} loading={"lazy"} alt={"fabricmc"}/>
           </div>
         </Tooltip>
         <Tooltip content={<p style={{fontSize: "smaller"}}>Minecraft Forge</p>} placement="bottom" arrow={true}>
