@@ -15,7 +15,7 @@ export const Hero = () => {
   React.useEffect(() => {
     const options = {
       strings: [
-        ` I am <b><i class="Hero_gradient__vJXrL">Thad Choyrum</i></b>.`,
+        ` I am <b><i class="Hero_gradient__vJXrL">[RETROACTIVELY REMOVED]</i></b>.`,
         ' My nicknames are <b class="Hero_gradient__vJXrL">IWant2TryHard</b>,',
         ' and <b class="Hero_gradient__vJXrL">MyNameTsThad</b>.'
       ],
