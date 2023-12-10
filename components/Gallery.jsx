@@ -25,27 +25,27 @@ export const Gallery = () => {
         <div className={styles.grid}>
           <div className={styles.box + " " + styles.hackerrank}>
             <div className={styles.fill}>
-              <Image src={"/images/cs_basic.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/cs_basic.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.hackerrank}>
             <div className={styles.fill}>
-              <Image src={"/images/js_basic.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/js_basic.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.hackerrank}>
             <div className={styles.fill}>
-              <Image src={"/images/js_int.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/js_int.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.hackerrank}>
             <div className={styles.fill}>
-              <Image src={"/images/java_basic.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/java_basic.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.hackerrank}>
             <div className={styles.fill}>
-              <Image src={"/images/py_basic.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/py_basic.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
         </div>
@@ -62,32 +62,32 @@ export const Gallery = () => {
         <div className={styles.grid}>
           <div className={styles.box + " " + styles.getlinks}>
             <div className={styles.fill}>
-              <Image src={"/images/getlinks1.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/getlinks1.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.getlinks}>
             <div className={styles.fill}>
-              <Image src={"/images/getlinks2.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/getlinks2.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.getlinks}>
             <div className={styles.fill}>
-              <Image src={"/images/getlinks3.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/getlinks3.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.getlinks}>
             <div className={styles.fill}>
-              <Image src={"/images/getlinks4.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/getlinks4.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.getlinks}>
             <div className={styles.fill}>
-              <Image src={"/images/getlinks5.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/getlinks5.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.getlinks}>
             <div className={styles.fill}>
-              <Image src={"/images/getlinks6.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/getlinks6.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
         </div>
@@ -102,22 +102,22 @@ export const Gallery = () => {
         <div className={styles.grid}>
           <div className={styles.box + " " + styles.verso}>
             <div className={styles.fill}>
-              <Image src={"/images/versocert.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/versocert.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.verso}>
             <div className={styles.fill}>
-              <Image src={"/images/verso1.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/verso1.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.verso}>
             <div className={styles.fill}>
-              <Image src={"/images/verso3.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/verso3.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.verso}>
             <div className={styles.fill}>
-              <Image src={"/images/verso4.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/verso4.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
         </div>
@@ -132,12 +132,12 @@ export const Gallery = () => {
         <div className={styles.grid}>
           <div className={styles.box + " " + styles.stem}>
             <div className={styles.fill}>
-              <Image src={"/images/cert1.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/cert1.jpg"} width={500} height={375} style={{objectFit: "cover"}}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.stem}>
             <div className={styles.fill}>
-              <Image src={"/images/cert2.jpg"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/cert2.jpg"} width={500} height={700} style={{objectFit: "cover", overflow: "scroll"}}/>
             </div>
           </div>
         </div>
