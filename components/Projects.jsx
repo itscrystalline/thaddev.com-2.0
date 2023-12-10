@@ -856,6 +856,7 @@ export const Projects = () => {
                                    boxShadowColor={"#5a83ff1e"}
                                    background={"#292929"}
                                    view={"https://v2.thaddev.com/files/DTImagineCupJunior2023.pptx"}
+                                   ytid={"65s5L8j9CZE"}
                         >
                             <span className={styles.title}>DeafTranslate (AI)</span>
                         </HoverCard>
