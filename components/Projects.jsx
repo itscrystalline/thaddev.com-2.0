@@ -825,7 +825,7 @@ export const Projects = () => {
                                    hover=
                                        {
                                            <>
-                                               <span className={styles.title}>CarRobot</span>
+                                               <span className={styles.title}>CarRobot (AI)</span>
                                                <div className="flex flex-wrap gap-2">
                                                    <AI/> <Python/>
                                                </div>
@@ -839,13 +839,13 @@ export const Projects = () => {
                                    source={"https://github.com/MyNameTsThad/SelfDrivingNeuralNetworkCar"}
                                    ytid={"W6grOr1CBOo"}
                         >
-                            <span className={styles.title}>CarRobot</span>
+                            <span className={styles.title}>CarRobot (AI)</span>
                         </HoverCard>
                         <HoverCard className={styles.logo}
                                    hover=
                                        {
                                            <>
-                                               <span className={styles.title}>DeafTranslate</span>
+                                               <span className={styles.title}>DeafTranslate (AI)</span>
                                                <div className="flex flex-wrap gap-2">
                                                    <AI/>
                                                </div>
@@ -857,7 +857,7 @@ export const Projects = () => {
                                    background={"#292929"}
                                    view={"https://v2.thaddev.com/files/DTImagineCupJunior2023.pptx"}
                         >
-                            <span className={styles.title}>DeafTranslate</span>
+                            <span className={styles.title}>DeafTranslate (AI)</span>
                         </HoverCard>
                     </div>
                 </Tabs.Item>
