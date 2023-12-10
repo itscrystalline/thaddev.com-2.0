@@ -132,12 +132,12 @@ export const Gallery = () => {
         <div className={styles.grid}>
           <div className={styles.box + " " + styles.stem}>
             <div className={styles.fill}>
-              <Image src={"https://cloud.thaddev.com/s/r4jdTjBKjSrD942/preview"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/cert1.jpg"} width={500} height={375} objectFit={"cover"}/>
             </div>
           </div>
           <div className={styles.box + " " + styles.stem}>
             <div className={styles.fill}>
-              <Image src={"https://cloud.thaddev.com/s/FoXHFoe9PRpFbce/preview"} width={500} height={375} objectFit={"cover"}/>
+              <Image src={"/images/cert2.jpg"} width={500} height={375} objectFit={"cover"}/>
             </div>
           </div>
         </div>
