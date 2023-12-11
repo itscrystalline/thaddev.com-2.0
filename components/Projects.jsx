@@ -405,6 +405,64 @@ export const Projects = () => {
                         >
                             <span className={styles.title}>HealthMod</span>
                         </HoverCard>
+                        <HoverCard className={styles.logo}
+                                   hover=
+                                       {
+                                           <>
+                                               <span className={styles.title}>Ultralytics AI Experiments</span>
+                                               <div className="flex flex-wrap gap-2">
+                                                   <AI/>
+                                               </div>
+                                               <hr className={styles.seperator}/>
+                                               I just played around with the Ultralytics YOLOv8 Image Detection AI model.
+                                           </>
+                                       }
+                                   borderColor={"#5a83ff"}
+                                   boxShadowColor={"#5a83ff1e"}
+                                   background={"#292929"}
+                                   ytid={"oqzngUNbpVM"}
+                        >
+                            <span className={styles.title}>Ultralytics AI Experiments</span>
+                        </HoverCard>
+                        <HoverCard className={styles.logo}
+                                   hover=
+                                       {
+                                           <>
+                                               <span className={styles.title}>CarRobot (AI)</span>
+                                               <div className="flex flex-wrap gap-2">
+                                                   <AI/> <Python/>
+                                               </div>
+                                               <hr className={styles.seperator}/>
+                                               A experimental robot car that uses AI to navigate around obstacles.
+                                           </>
+                                       }
+                                   borderColor={"#5a83ff"}
+                                   boxShadowColor={"#5a83ff1e"}
+                                   background={"#292929"}
+                                   source={"https://github.com/MyNameTsThad/SelfDrivingNeuralNetworkCar"}
+                                   ytid={"W6grOr1CBOo"}
+                        >
+                            <span className={styles.title}>CarRobot (AI)</span>
+                        </HoverCard>
+                        <HoverCard className={styles.logo}
+                                   hover=
+                                       {
+                                           <>
+                                               <span className={styles.title}>DeafTranslate (AI)</span>
+                                               <div className="flex flex-wrap gap-2">
+                                                   <AI/>
+                                               </div>
+                                               <hr className={styles.seperator}/>
+                                               A concept of a program made to translate hand signs. For Microsoft Imagine Cup Junior 2023.</>
+                                       }
+                                   borderColor={"#5a83ff"}
+                                   boxShadowColor={"#5a83ff1e"}
+                                   background={"#292929"}
+                                   view={"https://v2.thaddev.com/files/DTImagineCupJunior2023.pptx"}
+                                   ytid={"65s5L8j9CZE"}
+                        >
+                            <span className={styles.title}>DeafTranslate (AI)</span>
+                        </HoverCard>
                     </div>
                 </Tabs.Item>
                 <Tabs.Item title="Games">
