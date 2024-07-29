@@ -1567,9 +1567,9 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-marked@^5.0.4:
-  version "5.0.4"
-  resolved "https://registry.npmjs.org/marked/-/marked-5.0.4.tgz"
+marked@^13.0.3:
+  version "13.0.3"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-13.0.3.tgz#5c5b4a5d0198060c7c9bc6ef9420a7fed30f822d"
 
 merge-stream@^2.0.0:
   version "2.0.0"
